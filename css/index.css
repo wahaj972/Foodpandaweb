@@ -1,0 +1,807 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #d70f64;
+}
+header
+{
+    width: 100%;
+    padding: 10px 30px;
+    /* border-bottom: 1px solid #999; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 0.6s;
+
+}
+header.active
+{
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    z-index: 100000;
+    background-color: #fff;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
+    transition-duration: 0.6s;
+}
+header .logo
+{
+    width: 280px;
+    height: 50px;
+}
+header .logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .headerBtn button
+{
+    padding: 5px 30px;
+    border: 1px solid #d70f64;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #fff;
+    color: #d70f64;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+header .headerBtn button:nth-child(2)
+{
+    background-color: #d70f64;
+    color: #fff;
+}
+
+.banner
+{
+    width: 100%;
+    height: 70vh;
+    background: url("../Images/Home/hero-home-pk.webp");
+    background-size: 50% 100%;
+    background-position: 140%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner .bannerText
+{
+    width: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+}
+.banner .bannerText h2
+{
+    font-weight: 200;
+    font-size: 2.5em;
+}
+.banner .searchRestaurant
+{
+    width: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.banner .searchRestaurant input
+{
+    width: 60%;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 20px 40px;
+    outline: none;
+}
+.banner .searchRestaurant input:focus
+{
+    border: 1px solid #d70f64;
+}
+.banner .searchRestaurant input::placeholder
+{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.banner .searchRestaurant .bannerButton button
+{
+    padding: 20px 50px;
+    background-color: #d70f64;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.banner .searchRestaurant .bannerButton span
+{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.aboutTitle
+{
+    margin-top: 80px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.aboutTitle h2
+{
+    font-size: 2.2em;
+    color: #444;
+    font-weight: 200;
+    z-index: 1000;
+}
+.aboutTitle::before
+{
+    content: "Partners";
+    position: absolute;
+    bottom: -100px;
+    left: 15%;
+    font-size: 15em;
+    color: rgba(153, 153, 153, 0.1);
+    font-weight: 700;
+    z-index: -1000;
+}
+.about
+{
+    width: 100%;
+    height: 70vh;
+    background: url("../Images/Home/home-vendor-pk.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.about .aboutContent
+{
+    width: 40%;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.about .aboutContent h2
+{
+    font-size: 1.7em;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #111;
+}
+.about .aboutContent p
+{
+    margin-top: 20px;
+    font-size: 1em;
+    color: #555;
+    font-weight: 300;
+}
+.about .aboutContent .aboutBtn
+{
+    padding: 10px 70px;
+    background-color: #d70f64;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    float: right;
+}
+.cityTitle
+{
+    margin-top: 300px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.cityTitle h2
+{
+    font-size: 2.2em;
+    color: #444;
+    font-weight: 200;
+    z-index: 1000;
+}
+.cityTitle::before
+{
+    content: "Cities";
+    position: absolute;
+    bottom: -100px;
+    left: 15%;
+    font-size: 15em;
+    color: rgba(153, 153, 153, 0.1);
+    font-weight: 700;
+    z-index: -1000;
+}
+.city
+{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.city .cityContent
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.city .cityContent .cityCard
+{
+    width: 250px;
+    height: 300px;
+    background: url("../Images/Home/Karachi.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px;
+    cursor: pointer;
+}
+.city .cityContent .cityCard:nth-child(2)
+{
+    background: url("../Images/Home/Lahore.webp");
+    background-position: center;
+    background-size: cover;
+}
+.city .cityContent .cityCard:nth-child(3)
+{
+    background: url("../Images/Home/Islamabad.webp");
+    background-position: center;
+    background-size: cover;
+}
+.city .cityContent .cityCard:nth-child(4)
+{
+    background: url("../Images/Home/Karachi.webp");
+    background-position: center;
+    background-size: cover;
+}
+.city .cityContent .cityCard:nth-child(5)
+{
+    background: url("../Images/Home/Faisalabad.webp");
+    background-position: center;
+    background-size: cover;
+}
+.city .cityContent .cityCard h2
+{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    z-index: 1000;
+}
+.city .cityContent .cityCard .alphabet
+{
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    font-size: 15.5em;
+    color: #d70f64;
+    font-weight: 700;
+    z-index: 999;
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+.city .cityContent .cityCard:hover .alphabet
+{
+    opacity: 0.4;
+}
+.appTitle
+{
+    margin-top: 200px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.appTitle h2
+{
+    font-size: 2.2em;
+    color: #444;
+    font-weight: 200;
+    z-index: 1000;
+}
+.appTitle::before
+{
+    content: "Apps";
+    position: absolute;
+    bottom: -100px;
+    left: 15%;
+    font-size: 15em;
+    color: rgba(153, 153, 153, 0.1);
+    font-weight: 700;
+    z-index: -1000;
+}
+.app
+{
+    width: 100%;
+    height: 50vh;
+    background-color: #d70f64;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.app .cellPhones
+{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    /* width: 500px; */
+    height: 150%;
+    /* border: 1px solid #000; */
+}
+.app .cellPhones img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.app .appContent
+{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 50%;
+}
+.app .appContent h2
+{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
+    position: relative;
+}
+.app .appContent p
+{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-top: 30px;
+}
+.app .appContent .appBtn
+{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app .appContent .appBtn button
+{
+    margin-top: 30px;
+    width: 130px;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app .appContent .appBtn button .icon
+{
+    width: 30px;
+    height: 30px;
+    /* background-color: #fff; */
+}
+.app .appContent .appBtn button .icon img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.app .appContent .appBtn button .title span
+{
+    color: #fff;
+    font-size: 8px;
+}
+.app .appContent .appBtn button .title h2
+{
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.businessTitle
+{
+    margin-top: 300px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.businessTitle h2
+{
+    font-size: 2.2em;
+    color: #444;
+    font-weight: 200;
+    z-index: 1000;
+}
+.businessTitle::before
+{
+    content: "Office";
+    position: absolute;
+    bottom: -100px;
+    left: 15%;
+    font-size: 15em;
+    color: rgba(153, 153, 153, 0.1);
+    font-weight: 700;
+    z-index: -1000;
+}
+.business
+{
+    width: 100%;
+    height: 50vh;
+    background: url("../Images/Home/home-corporate-pk.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.business .businessContent
+{
+    width: 35%;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.business .businessContent h2
+{
+    font-size: 1.7em;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #111;
+}
+.business .businessContent p
+{
+    margin-top: 20px;
+    font-size: 1em;
+    color: #555;
+    font-weight: 300;
+}
+.business .businessContent .aboutBtn
+{
+    padding: 10px 70px;
+    background-color: #d70f64;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    float: right;
+}
+footer
+{
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+footer .footerContent
+{
+    width: 80%;
+}
+footer .footerContent .aboutFoodpanda
+{
+    width: 100%;
+}
+footer .footerContent .aboutFoodpanda h2
+{
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #333;
+}
+footer .footerContent .aboutFoodpanda p
+{
+    color: #666;
+    margin-top: 20px;
+    font-weight: 300;
+}
+footer .footerContent .whatsNew
+{
+    margin-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+footer .footerContent .whatsNew h2
+{
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #222;
+}
+footer .footerContent .whatsNew p
+{
+    color: #666;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1em;
+}
+footer .footerContent .whatsNew p span
+{
+    color: #d70f64;
+    font-size: 1.2em;
+}
+
+footer .footerContent .faq
+{
+    margin-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+footer .footerContent .faq h2
+{
+    font-size: 2.1em;
+    font-weight: 700;
+    color: #222;
+}
+footer .footerContent .faq h3
+{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #444;
+}
+footer .footerContent .faq p
+{
+    color: #666;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1em;
+}
+footer .footerContent .socialMedia
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+footer .footerContent .socialMedia img
+{
+    width: 180px;
+    filter: grayscale(100%);
+}
+footer .footerContent .copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+footer .footerContent .copyright h2
+{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #777;
+}
+
+@media screen and (max-width:1280px)
+{
+    header .logo 
+    {
+        width: 160px;
+    }
+    header .headerBtn button 
+    {
+        padding: 5px 23px;
+        font-size: 10px;
+    }
+    .banner
+    {
+        height: 45vh;
+    }
+    .banner .bannerText {
+        width: 70%;
+        position: absolute;
+        top: 19%;
+    }
+    .banner .bannerText h2 
+    {
+        font-weight: 200;
+        font-size: 1.8em;
+    }
+    .banner .searchRestaurant input 
+    {
+        width: 50%;
+        padding: 10px 20px;
+    }
+    .banner .searchRestaurant input::placeholder
+    {
+        font-size: 1em;
+        font-weight: 300;
+    }   
+    .banner .searchRestaurant .bannerButton button 
+    {
+        padding: 11px 35px;
+        font-size: 12px;
+    }
+    .banner .searchRestaurant .bannerButton span 
+    {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .banner .searchRestaurant {
+        top: 33%;
+        left: 10.5%;
+        padding: 8px;
+    }
+    .about {
+        height: 35vh;
+    }
+    .aboutTitle 
+    {
+        width: 60%;
+    }
+    .aboutTitle::before 
+    {
+        bottom: -80px;
+        font-size: 10em;
+    }
+    .aboutTitle h2 {
+        font-size: 1.8em;
+        color: #444;
+        font-weight: 200;
+        z-index: 1000;
+    }
+    .about .aboutContent {
+        width: 40%;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        opacity: 0.95;
+    }
+    .about .aboutContent h2 {
+        font-size: 1.2em;
+    }
+    .about .aboutContent p {
+        margin-top: 14px;
+        font-size: 13px;
+    }
+    .about .aboutContent .aboutBtn {
+        padding: 5px 30px;
+        font-size: 12px;
+    }
+    .cityTitle {
+        margin-top: 250px;
+        width: 65%;
+    }
+    .cityTitle h2{
+        font-size: 2em;
+    }
+    .cityTitle::before {
+        left: 13%;
+        font-size: 12em;
+    }
+    .city .cityContent {
+        width: 90%;
+    }
+    .city .cityContent .cityCard {
+        width: 200px;
+        height: 253px;
+    }
+    .city .cityContent .cityCard h2 {
+        font-size: 1.5em;
+    }
+    .city .cityContent .cityCard .alphabet {
+        top: 0px;
+        font-size: 14.4em;
+    }
+    .appTitle {
+    margin-top: 170px;
+    }
+    .appTitle h2 {
+        font-size: 2em;
+        }
+    .appTitle::before {
+        font-size: 13em;
+    }
+    .app {
+        height: 38vh;
+    }
+    .app .appContent {
+        width: 45%;
+    }
+    .app .appContent h2 {
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    .app .appContent p {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .app .appContent .appBtn {
+        width: 65%;
+    }
+    .app .cellPhones {
+        height: 130%;
+        top: -50px;
+    }
+    .app .appContent .appBtn button {
+        margin-top: 22px;
+        width: 120px;
+    }
+    .app .appContent .appBtn button .title h2 {
+        font-size: 10px;
+    }
+    .business {
+        height: 38vh;
+    }
+    .businessTitle {
+        margin-top: 230px;
+    }
+    .businessTitle::before {
+        font-size: 12em;
+    }
+    .businessTitle h2 {
+        font-size: 2em;
+    }
+    .business .businessContent {
+        width: 35%;
+        padding: 25px;
+        top: 55%;
+    }
+    .business .businessContent h2 {
+        font-size: 1.4em;
+    }
+    .business .businessContent p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .business .businessContent .aboutBtn {
+        padding: 5px 50px;
+        font-size: 12px;
+    }
+    footer .footerContent .aboutFoodpanda h2 {
+        font-size: 1.7em;
+    }
+    footer .footerContent .aboutFoodpanda p {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    footer .footerContent .whatsNew {
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    footer .footerContent .whatsNew h2 {
+        font-size: 2em;
+        color: #333;
+    }
+    footer .footerContent .whatsNew p {
+        font-size: 14px;
+    }
+    footer .footerContent .faq h2 {
+        font-size: 1.8em;
+    }
+    footer .footerContent .faq h3 {
+        font-size: 1em;
+    }
+    footer .footerContent .faq p {
+        font-size: 14px;
+    }
+    footer .footerContent .socialMedia img {
+        width: 150px;
+    }
+    footer .footerContent .copyright h2 {
+        font-size: 14px;
+    }
+}

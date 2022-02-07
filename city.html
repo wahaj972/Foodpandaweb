@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City</title>
+    <link rel="icon" href="Images/Home/pandaicon.png">
+    <link rel="stylesheet" href="css/city.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section Start  -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Home/logo.png" alt=""></a> 
+        </div>
+        <div class="headerBtn">
+            <button class="loginBtn">Login</button>
+            <button class="signupBtn">Signup</button>
+        </div>
+    </header>
+<!-- Header Section End  -->
+
+<!-- Banner Section Start  -->
+    <section class="banner">
+        <div class="bannerText">
+            <h2>Food Delivery from ڪراچي Karachi’s Best Restaurants</h2>
+        </div>
+        <div class="searchRestaurant">
+            <input type="text" placeholder="Enter your full address">
+            <div class="bannerButton">
+                <button class="pickup">pick-up</button>
+            </div>
+        </div>
+    </section>
+<!-- Banner Section End  -->
+
+<!-- Restaurant Section Start  -->
+    <div class="restaurantTitle">
+        <h2>Popular restaurants in Karachi</h2>
+    </div>
+    <section class="restaurant">
+        <div class="restaurantContent">
+           <a href="restaurant.html" target="_blank"><div class="restaurantCard" data-aos="fade-up" data-aos-duration="800">
+                <div class="imgBx"></div>
+                <div class="title">
+                    <h2>pizza hut</h2>
+                    <p>$$$, beverages, pakistani, desert</p>
+                    <div class="discount">flat 30% off</div>
+                </div>
+            </div></a>
+            <div class="restaurantCard" data-aos="fade-up" data-aos-duration="1000">
+                <div class="imgBx"></div>
+                <div class="title">
+                    <h2>makkah bakery</h2>
+                    <p>$$$, beverages, pakistani, desert</p>
+                    <div class="discount">flat 50% off</div>
+                </div>
+            </div>
+            <div class="restaurantCard" data-aos="fade-up" data-aos-duration="1200">
+                <div class="imgBx"></div>
+                <div class="title">
+                    <h2>Student Biryani</h2>
+                    <p>$$$, beverages, pakistani, desert</p>
+                    <div class="discount">flat 10% off</div>
+                </div>
+            </div>
+            <div class="restaurantCard" data-aos="fade-up" data-aos-duration="1400">
+                <div class="imgBx"></div>
+                <div class="title">
+                    <h2>Karachi Haleem</h2>
+                    <p>$$$, beverages, pakistani, desert</p>
+                    <div class="discount">flat 10% off</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Restaurant Section End  -->
+
+<!-- Footer Section Start  -->
+<footer>
+    <div class="footerContent">
+        <div class="aboutFoodpanda">
+            <h2>Food Delivery in Karachi From Only The Best Restaurants</h2>
+            <p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your everyday easier. Our online food delivery service has it all, whether you fancy Indian, Pakistani or Afghan cuisine, foodpanda Pakistan has over 15,000 restaurants available in top cities like Islamabad, Lahore, Rawalpindi, and Karachi. Did you know you can order your groceries and more from foodpanda, too? Check out foodpanda shops for favourite partners like Al-Fatah, Greenvalley and more. Sit back and relax – let foodpanda Pakistan take the pressure off your shoulders.</p>
+        </div>
+        <div class="whatsNew">
+            <h2>What's new?</h2>
+            <p><span>✓</span> Selection of premium restaurants, all kind of cuisines.</p>
+            <p><span>✓</span> Selection of premium restaurants, all kind of cuisines.</p>
+            <p><span>✓</span> Selection of premium restaurants, all kind of cuisines.</p>
+            <p><span>✓</span> Selection of premium restaurants, all kind of cuisines.</p>
+        </div>
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>How can I get foodpanda delivery?</h3>
+            <p>To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will arrive at your doorstep !</p>
+            <h3>Does foodpanda deliver 24 hours?</h3>
+            <p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late night delivery. Please check which places in Pakistan deliver to you 24 hours by using your address. You can also order groceries 24 hours a day via pandamart.</p>
+        </div>
+        <div class="socialMedia">
+            <img src="Images/Home/logo.png" alt="">
+        </div>
+        <div class="copyright">
+            <h2>Copyright &copy 2021. Syed Muhammad Taha. All Rights Reserved.</h2>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End  -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+     AOS.init();
+document.addEventListener('scroll',function()
+{
+    var header = document.querySelector('header');
+    header.classList.toggle('active',window.scrollY>40);
+})
+</script>
+</body>
+</html>

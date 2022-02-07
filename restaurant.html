@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="icon" href="Images/Home/pandaicon.png">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section Start  -->
+    <header>
+        <div class="logo">
+           <a href="index.html"><img src="Images/Home/logo.png" alt=""></a> 
+        </div>
+        <div class="headerBtn">
+            <button class="loginBtn">Login</button>
+            <button class="signupBtn">Signup</button>
+        </div>
+    </header>
+<!-- Header Section End  -->
+
+<!-- SideBar Section Start  -->
+    <section class="sidebar">
+        <div class="title">
+            <h2>Delivery</h2>
+            <div class="button"></div>
+            <h2>Pick-up</h2>
+        </div>
+        <h2>Your Cart</h2>
+        <p>Start adding items to your cart</p><br>
+        <hr>
+        <div class="subtotal">
+            <h2>Subtotal</h2>
+            <h3>Rs.0</h3>
+        </div>
+        <div class="total">
+            <h2>Total(Incl. GST)</h2>
+            <h3>Rs.0</h3>
+        </div>
+        <button class="ChecoutBtn">go to checkout</button>
+    </section>
+<!-- SideBar Section End  -->
+
+
+<!-- Banner Section Start  -->
+    <section class="banner"></section>
+<!-- Banner Section End  -->
+
+
+<!-- Restarant Info Section Start  -->
+    <section class="restaurantInfo">
+        <div class="restaurantName">
+            <h2>Student Biryani & Pakwan Center</h2>
+        </div>
+        <div class="rating">
+            <h2><span>&star;</span> 4.5/5</h2>
+        </div>
+        <div class="details">
+            <p>
+                <span>$$$ .</span>
+                <span>Non-alcoholic Drinks .</span>
+                <span>Pakistan</span>
+            </p>
+        </div>
+    </section>
+<!-- Restarant Info Section End  -->
+
+<!-- Speciallity Section Start  -->
+    <section class="speciality">
+        <h2>popular</h2>
+        <h2>panda combo</h2>
+        <h2>hot deals</h2>
+        <h2>rice</h2>
+        <h2>side</h2>
+        <h2>desert</h2>
+        <h2>beverages</h2>
+    </section>
+<!-- Speciallity Section End  -->
+
+<!-- Dishes Section Start  -->
+    <section class="dishes">
+        <div class="title1">
+            <h2>Pupular <br>
+                <span>Most ordered right now.</span>
+            </h2>
+        </div>
+        <div class="card">
+        <div class="dishesCard">
+            <div class="title">
+                <h2>combo deal 1 <br>
+                <span>chicken biryani single & 500ml soft drink</span>
+                </h2>
+                <h3>Rs. 200</h3>
+            </div>
+            <div class="imgBx">
+                <img src="Images/Restaurant/biryani.webp" alt="">
+            </div>
+        </div>
+        <div class="dishesCard">
+            <div class="title">
+                <h2>combo deal 1 <br>
+                <span>chicken biryani single & 500ml soft drink</span>
+                </h2>
+                <h3>Rs. 200</h3>
+            </div>
+            <div class="imgBx">
+                <img src="Images/Restaurant/biryani.webp" alt="">
+            </div>
+        </div>
+        <div class="dishesCard">
+            <div class="title">
+                <h2>combo deal 1 <br>
+                <span>chicken biryani single & 500ml soft drink</span>
+                </h2>
+                <h3>Rs. 200</h3>
+            </div>
+            <div class="imgBx">
+                <img src="Images/Restaurant/biryani.webp" alt="">
+            </div>
+        </div>
+        <div class="dishesCard">
+            <div class="title">
+                <h2>combo deal 1 <br>
+                <span>chicken biryani single & 500ml soft drink</span>
+                </h2>
+                <h3>Rs. 200</h3>
+            </div>
+            <div class="imgBx">
+                <img src="Images/Restaurant/biryani.webp" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- Dishes Section End  -->
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ AOS.init();
+    document.addEventListener('scroll',function()
+    {
+        var header = document.querySelector('header');
+        header.classList.toggle('active',window.scrollY>40);
+    })
+</script>
+</body>
+</html>
